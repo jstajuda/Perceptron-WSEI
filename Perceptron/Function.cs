@@ -2,7 +2,7 @@
 
 namespace JS_Perceptron_Project
 {
-    public interface Function
+    public interface IFunction
     {
         double GetValue(double x);
     }

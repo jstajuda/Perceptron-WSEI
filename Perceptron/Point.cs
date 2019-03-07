@@ -3,7 +3,7 @@
 namespace JS_Perceptron_Project
 {
 
-    public class Point : Input
+    public class Point : IInput
     {
         private double x;
         private double y;
@@ -14,7 +14,7 @@ namespace JS_Perceptron_Project
             this.y = y;
         }
 
-        public int GetLabel(Function linFunc)
+        public int GetLabel(IFunction linFunc)
         {
             return (y >= linFunc.GetValue(x)) ? 1 : -1;
         }

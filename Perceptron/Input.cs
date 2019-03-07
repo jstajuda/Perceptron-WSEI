@@ -2,10 +2,10 @@
 
 namespace JS_Perceptron_Project { 
 
-    public interface Input
+    public interface IInput
     {
         double[] GetInputs();
-        int GetLabel(Function linFunc);
+        int GetLabel(IFunction linFunc);
     }
 
 }

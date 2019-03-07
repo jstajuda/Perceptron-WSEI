@@ -2,7 +2,7 @@
 
 namespace JS_Perceptron_Project { 
 
-    public class LinearFunction : Function
+    public class LinearFunction : IFunction
     {
         private double a;
         private double b;

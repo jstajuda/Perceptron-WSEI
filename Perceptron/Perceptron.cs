@@ -69,11 +69,11 @@ namespace JS_Perceptron_Project {
             return minValue + (next * (maxValue - minValue));
         }
 
-        public int Run<T>(IEnumerable<T> inputs, Function linFunc, bool initial = false) where T : Input
+        public int Run<T>(IEnumerable<T> inputs, IFunction linFunc, bool initial = false) where T : IInput
         {
             int totalError = 0;
             
-            foreach (Input input in inputs)
+            foreach (IInput input in inputs)
             {
                 int guess = Guess(input.GetInputs());
                 int label = input.GetLabel(linFunc);
